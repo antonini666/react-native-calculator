@@ -1,20 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { StatusBar } from "react-native";
+import { Provider } from "react-redux";
 
 import { InputContainer } from "./src/components/input-container/";
 import { ResultContainer } from "./src/components/result-container/";
 import { ComponentStyled } from "./app.styles";
+import { store } from "./src/services/redux/store";
 
 export default App = () => {
-  const [value, setValue] = useState("0");
-
   const { Container } = ComponentStyled;
 
   return (
-    <Container>
-      <StatusBar text="white" />
-      <ResultContainer value={value} />
-      <InputContainer />
-    </Container>
+    <Provider store={store}>
+      <Container>
+        <StatusBar barStyle="light-content" />
+        <ResultContainer />
+        <InputContainer />
+      </Container>
+    </Provider>
   );
 };

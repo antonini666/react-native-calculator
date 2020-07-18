@@ -2,11 +2,12 @@ import React from "react";
 
 import { ComponentStyled } from "./calc-button.styles";
 
-export const CalcButton = ({
+const CalcButton = ({
   noMargin,
   largeButtom,
   backgroundColor,
   text,
+  handleButtonPress,
 }) => {
   const { ButtonContainer, ButtonText } = ComponentStyled;
 
@@ -15,8 +16,11 @@ export const CalcButton = ({
       noMargin={noMargin}
       largeButtom={largeButtom}
       backgroundColor={backgroundColor}
+      onPress={handleButtonPress}
     >
       <ButtonText>{text}</ButtonText>
     </ButtonContainer>
   );
 };
+
+export { CalcButton };

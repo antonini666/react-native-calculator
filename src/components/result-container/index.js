@@ -1,1 +1,3 @@
-export { ResultContainer } from "./result-container";
+import ResultContainer from "./result-container";
+
+export { ResultContainer };

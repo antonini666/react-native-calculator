@@ -20,6 +20,8 @@ export const InputContainer = () => {
           noMargin={item.noMargin}
           largeButtom={item.largeButtom}
           backgroundColor={item.backgroundColor}
+          type={item.type}
+          value={item.value}
         />
       )}
     />
