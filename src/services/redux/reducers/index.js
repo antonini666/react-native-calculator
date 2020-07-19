@@ -20,7 +20,6 @@ const initialState = {
 };
 
 export const calculatorReducer = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case SET_NUMBER:
       if (state.currentValue === "0" && action.payload === ".") {

@@ -1,3 +1,3 @@
-import ResultContainer from "./result-container";
+import ResultContainerState from "./resul-container.container";
 
-export { ResultContainer };
+export { ResultContainerState as ResultContainer };
