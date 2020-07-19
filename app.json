@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "myNewProject",
-    "slug": "myNewProject",
+    "name": "CalculatorAndroid",
+    "slug": "CalculatorAndroid",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,8 +22,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "sdkVersion": "38.0.0",
     "android": {
-      "package": "com.antonini666.myNewProject"
+      "package": "com.antonini666.CalculatorAndroid"
     }
   }
 }
