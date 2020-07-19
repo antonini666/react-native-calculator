@@ -31,7 +31,7 @@ export const calculatorReducer = (state = initialState, action) => {
       if (state.currentValue === "0") {
         return { ...state, currentValue: `${action.payload}` };
       }
-      if (state.currentValue.length > 9) {
+      if (state.currentValue.length > 8) {
         return { ...state };
       }
       return {

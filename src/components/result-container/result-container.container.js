@@ -18,12 +18,21 @@ const ResultContainerState = ({ value, memory, memoryVisibility }) => {
     }
   };
 
+  const getMemory = () => {
+    if (memory.length > 9) {
+      return parseFloat(memory).toExponential(4);
+    } else {
+      return memory;
+    }
+  };
+
   return (
     <ResultContainer
-      getValue={getValue}
       value={value}
       memory={memory}
       memoryVisibility={memoryVisibility}
+      getValue={getValue}
+      getMemory={getMemory}
     />
   );
 };
